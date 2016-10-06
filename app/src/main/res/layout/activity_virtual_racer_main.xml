@@ -50,7 +50,7 @@
                 android:layout_column="1"
                 android:src="@drawable/set_challange"
                 android:layout_weight="1"
-                />
+                 />
 
             <ImageButton
                 android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                 android:layout_column="2"
                 android:src="@drawable/view_pastrecord"
                 android:layout_weight="1"
-                />
+                 />
         </TableRow>
     </TableLayout>
 
