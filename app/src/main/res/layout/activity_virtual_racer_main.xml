@@ -41,7 +41,7 @@
                 android:layout_column="0"
                 android:src="@drawable/set_target"
                 android:layout_weight="1"
-                />
+                 />
 
             <ImageButton
                 android:layout_width="match_parent"
