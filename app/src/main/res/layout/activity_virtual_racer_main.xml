@@ -59,7 +59,7 @@
                 android:layout_column="2"
                 android:src="@drawable/view_pastrecord"
                 android:layout_weight="1"
-                 />
+                />
         </TableRow>
     </TableLayout>
 
