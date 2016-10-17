@@ -155,10 +155,62 @@
         android:id="@+id/viewHoriRule4"
         android:layout_below="@+id/mainAnimation"/>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/framelayout"
+        android:layout_below="@+id/mainAnimation">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:id="@+id/imageVR"
+            android:src="@drawable/background1"
+            />
+        <ImageView
+            android:id="@+id/imageVR2"
+            android:layout_width="wrap_content"
+            android:layout_height="114dp"
+            android:src="@drawable/background1"
+            android:layout_marginRight="-750dp"
+
+            />
+        <ImageView
+            android:id="@+id/stickman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/run"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/chronometerTimer"
+            />
+
+
+    </FrameLayout>
+    <Chronometer
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometerTimer"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="60dp"
+        android:textIsSelectable="false"
+        android:textColor="@color/ThemeFontColor"
+        android:layout_below="@+id/framelayout" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/CountDownTimer"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="60dp"
+        android:textIsSelectable="false"
+        android:textColor="@color/ThemeFontColor"
+        android:layout_alignTop="@+id/chronometerTimer"
+        android:text="00:00" />
     <TableLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/mainAnimation"
+        android:layout_below="@+id/chronometerTimer"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:paddingTop="5dp"
@@ -265,11 +317,22 @@
         android:background="#000000"
         android:id="@+id/viewHoriRule5"
         android:layout_below="@+id/tableLiveDetails"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/warmUp"
+        android:layout_below="@+id/viewHoriRule5"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:id="@+id/TextViewStage"
+        android:layout_margin="10dp" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/startButton"
-        android:layout_below="@+id/viewHoriRule5"
-        android:text="@string/start"/>
+        android:layout_below="@+id/TextViewStage"
+        android:text="@string/start"
+        android:onClick="buttonStart"/>
 </RelativeLayout>

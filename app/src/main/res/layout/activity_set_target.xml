@@ -166,6 +166,7 @@
         android:id="@+id/btnAccept1"
         android:layout_below="@+id/horiRuleST2"
         android:text="@string/accept"
+        android:onClick="targetSet"
         />
 
     <Button
@@ -174,5 +175,6 @@
         android:id="@+id/btnReset1"
         android:layout_below="@+id/btnAccept1"
         android:text="@string/reset"
+        android:onClick="targetReset"
         />
 </RelativeLayout>
