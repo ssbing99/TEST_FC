@@ -263,6 +263,7 @@
                 android:layout_margin="1dp"
                 android:layout_column="4"
                 android:paddingLeft="5dp" />
+            
             <TextView
                 android:id="@+id/currentDistanceResult"
                 android:layout_width="wrap_content"
